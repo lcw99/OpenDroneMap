@@ -138,7 +138,7 @@ class ODMDEMCell(ecto.Cell):
                         dsm_pattern = 'odm_georeferenced_model.bounds-0_dsm.idw.tif' if args.crop > 0 else 'dsm.idw.tif'
                         os.rename(os.path.join(odm_dem_root, dsm_pattern), dsm_output_filename)
                     elif product == 'dtm':
-                        dtm_pattern = 'odm_georeferenced_model.bounds-0_dsm.idw.tif' if args.crop > 0 else 'dtm.idw.tif'
+                        dtm_pattern = 'odm_georeferenced_model.bounds-0_dtm.idw.tif' if args.crop > 0 else 'dtm.idw.tif'
                         os.rename(os.path.join(odm_dem_root, dtm_pattern), dtm_output_filename)
 
             else:
